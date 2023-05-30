@@ -23,7 +23,7 @@ public class C02_DriverMethods {
         System.out.println("Techproed Actual Url : " +driver.getCurrentUrl());
 
         //İçinde olunan sayfanın kaynak kodlarını String olarak verir.
-        System.out.println(driver.getPageSource());
+        //System.out.println(driver.getPageSource());
 
         //getWindowHandle() gidilen sayfanın handle değerini(hashkod) verir.
         //bu handle değerini sayfalar arası geçiş için kullanırız.
