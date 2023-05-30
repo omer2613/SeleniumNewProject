@@ -7,7 +7,7 @@ public class C02_DriverMethods {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","src/main/resources/drivers/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
-        driver.get("http://amazon.com");
+        driver.get("https://www.amazon.com");
 
         //getTitle() Sayfa basligini verir
         System.out.println("Amazon Actual Title : " +driver.getTitle());
