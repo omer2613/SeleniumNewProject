@@ -40,10 +40,10 @@ public class C03_relativeLocators {
         aramaKutusu.sendKeys("city bike", Keys.ENTER);
         //relative locator kullanarak hybrid bikes altindaki elemente tiklayalim
 
-        WebElement hybridBikes= driver.findElement(By.xpath("//*[text()='Hybrid Bikes']"));
-        By with;
-        WebElement electricBike= driver.findElement(with(By.tagName("a")).below(hybridBikes));
-        WebElement completeBike= driver.findElement(with(By.tagName("a")).above(hybridBikes));
+        WebElement hybridBike = driver.findElement(By.xpath("//*[text()='Hybrid Bikes']"));
+        WebElement electricBike = driver.findElement(with(By.tagName("a")).below(hybridBike));
+        WebElement completeBike = driver.findElement(with(By.tagName("a")).below(electricBike));
+        completeBike.click();
 
         completeBike.click();
         driver.close();
